@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d46deb822769d5e3581d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "rebot_interfaces__py",
+					"jsonFile" : "directory-rebot_interfaces__py-7780306e311ba5ba8586.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces/rebot_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "rebot_interfaces__rs",
+					"jsonFile" : "directory-rebot_interfaces__rs-80c88368b17e428721f5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces/rebot_interfaces__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "rebot_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rebot_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rebot_interfaces_egg-5fe55fb0d165a37e8bab.json",
+					"name" : "ament_cmake_python_build_rebot_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rebot_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rebot_interfaces-b3abf971637075ebe482.json",
+					"name" : "ament_cmake_python_copy_rebot_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces-679aadf8850034901bf6.json",
+					"name" : "rebot_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__cpp-b587b356937ac11c16bd.json",
+					"name" : "rebot_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rebot_interfaces__py::@ee9cad00e7a034caa03b",
+					"jsonFile" : "target-rebot_interfaces__py-797a1757d725d865b8fd.json",
+					"name" : "rebot_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_generator_c-3171f3935c7cd8260b6b.json",
+					"name" : "rebot_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_generator_py-92d5679fc339090b5eb8.json",
+					"name" : "rebot_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_c-04ee295ffed43d921c52.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_c__pyext-39ca28b1dbb09d38e246.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_cpp-0bff1170be05a86b2f09.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_fastrtps_c-73eb89c1a44acae96a38.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_fastrtps_c__pyext-0e4868513816dff247b4.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_fastrtps_cpp-1d336eb97ed0e6176cd4.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_introspection_c-ba6f538133eacc58b77f.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_introspection_c__pyext-beae44cfe5aff5ed3336.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces__rosidl_typesupport_introspection_cpp-7ca8f7592c72eefdcbb4.json",
+					"name" : "rebot_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "rebot_interfaces__rs::@f83cd0615229576fe008",
+					"jsonFile" : "target-rebot_interfaces__rs-01fedbf2cf58ed97c251.json",
+					"name" : "rebot_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rebot_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rebot_interfaces_uninstall-a5a4490dc698906f5ce9.json",
+					"name" : "rebot_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-61835a6c0974b9f06322.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces",
+		"source" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/src/rebot_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

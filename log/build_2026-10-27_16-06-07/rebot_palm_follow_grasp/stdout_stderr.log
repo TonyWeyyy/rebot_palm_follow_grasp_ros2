@@ -1,0 +1,62 @@
+running egg_info
+creating ../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info
+writing ../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info/PKG-INFO
+writing dependency_links to ../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info/dependency_links.txt
+writing entry points to ../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info/entry_points.txt
+writing requirements to ../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info/requires.txt
+writing top-level names to ../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info/top_level.txt
+writing manifest file '../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info/SOURCES.txt'
+reading manifest file '../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info/SOURCES.txt'
+writing manifest file '../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/kalman_target.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/urdf_kinematics.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/__init__.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/servo_node.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/rebot_adapter.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/servo_math.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/vision_node.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/palm_detection.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+copying rebot_palm_follow_grasp/gemini2_camera.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp
+running install
+running install_lib
+creating /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/kalman_target.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/urdf_kinematics.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/__init__.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/servo_node.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/rebot_adapter.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/servo_math.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/vision_node.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/palm_detection.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+copying /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/build/lib/rebot_palm_follow_grasp/gemini2_camera.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/kalman_target.py to kalman_target.cpython-310.pyc
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/urdf_kinematics.py to urdf_kinematics.cpython-310.pyc
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/servo_node.py to servo_node.cpython-310.pyc
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/rebot_adapter.py to rebot_adapter.cpython-310.pyc
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/servo_math.py to servo_math.cpython-310.pyc
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/vision_node.py to vision_node.cpython-310.pyc
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/palm_detection.py to palm_detection.cpython-310.pyc
+byte-compiling /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp/gemini2_camera.py to gemini2_camera.cpython-310.pyc
+running install_data
+creating /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/ament_index/resource_index/packages
+copying resource/rebot_palm_follow_grasp -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/ament_index/resource_index/packages
+copying package.xml -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp
+creating /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/config
+copying config/params.yaml -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/config
+copying config/viewpoint.json -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/config
+copying config/home_pose.json -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/config
+copying config/hand_eye_calibration.json -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/config
+copying config/joint_offset.json -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/config
+copying config/hand_landmarker.task -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/config
+creating /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/launch
+copying launch/palm_follow_grasp.launch.py -> /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/share/rebot_palm_follow_grasp/launch
+running install_egg_info
+Copying ../../build/rebot_palm_follow_grasp/rebot_palm_follow_grasp.egg-info to /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/python3.10/site-packages/rebot_palm_follow_grasp-2.0.0-py3.10.egg-info
+running install_scripts
+Installing servo_node script to /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/rebot_palm_follow_grasp
+Installing vision_node script to /home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/install/rebot_palm_follow_grasp/lib/rebot_palm_follow_grasp
+writing list of installed files to '/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_palm_follow_grasp/install.log'

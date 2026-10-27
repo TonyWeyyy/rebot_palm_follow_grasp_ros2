@@ -1,0 +1,125 @@
+# ============================================================
+# reBot 手掌跟随 + 捏合抓取 ROS2 版 —— 全部可调参数
+# ------------------------------------------------------------
+# 两个节点共用本文件（launch 时同时加载）：
+#   vision_node —— 相机/检测/深度保护链/捏合映射 相关参数
+#   servo_node  —— 跟随伺服/卡尔曼/安全链/夹爪冻结 相关参数
+# 每个节点只读取自己名下的键；改完重启 launch 生效，
+# 或运行时用 ros2 param set /<节点名> <键> <值> 在线调。
+# 数值 = 最终版实机调定值（9 轮实机日志迭代收敛）。
+# ============================================================
+
+vision_node:
+  ros__parameters:
+    # ---- 相机 ----
+    fps: 60                     # 相机帧率（Gemini 2 硬顶 60，枚举确认）
+    color_exposure_ms: 6.0      # 彩色手动曝光(ms)，0=自动；6+补光为实测最佳
+    detector_backend: "auto"    # auto / gpu / cpu
+    headless: false             # true = 不开窗口（无显示器环境）
+
+    # ---- 跟随距离（背景深度拒绝 & 冻结占位都要用）----
+    distance: 0.35              # 期望相机到掌心距离 (m)【范围】0.20~0.60
+
+    # ---- 检测+跟踪混合（光流桥接）----
+    hybrid_track_enable: true   # MediaPipe 掉检帧 LK 光流桥接
+    hybrid_max_frames: 15       # 连续桥接上限（帧）【范围】5~30
+    hybrid_box_half: 45         # 桥接点阵半边长 (px)【范围】30~70
+    hybrid_max_step_px: 90.0    # 单帧最大位移 (px)，超出判飞点【范围】50~150
+
+    # ---- 深度四层保护链 ----
+    z3d_max_jump: 0.08          # 深度跳变剔除阈值 (m)【范围】0.04~0.15
+    z3d_max_rate: 0.05          # 深度限速 (m/帧)【范围】0.02~0.10
+    z_freeze_max: 0.20          # 深度冻结最长 (s)；0=关闭冻结回旧丢失流程
+    depth_oe_min_cutoff: 0.75   # 深度 One Euro 静止截止 (Hz)【推荐】0.7~1.2
+    depth_oe_beta: 0.03         # 深度 One Euro 运动放开系数
+
+    # ---- 捏合 → 夹爪映射（目标角计算在本节点，冻结在 servo_node）----
+    pinch_closed_px: 20.0       # 捏合时像素距离
+    pinch_open_px: 200.0        # 张开时像素距离
+    pinch_filter_type: "one_euro"   # one_euro / ema
+    pinch_smoothing: 0.35       # 仅 ema 用
+    pinch_min_cutoff_hz: 2.0    # one_euro 静止截止
+    pinch_beta: 0.010           # one_euro 运动放开
+    pinch_dcutoff_hz: 1.0
+    gripper_enabled: true
+    gripper_closed_deg: -19.7   # 夹爪闭合角 (度，J7 实测标定值)
+    gripper_open_deg: 293.6     # 夹爪张开角 (度)
+
+servo_node:
+  ros__parameters:
+    # ---- 跟随目标与增益 ----
+    distance: 0.35              # 与 vision_node 保持一致！
+    gain: 2.35                  # Y/Z 位置增益（最终版）【推荐】2.0~3.0
+    gain_x: 2.4                 # X 水平增益【推荐】1.4~2.2
+    max_vel: 0.50               # 末端线速度上限 (m/s)
+    max_vel_joint: 1.50         # 关节速度上限 (rad/s)
+    max_vel_angular: 1.50       # 角速度上限 (rad/s)
+
+    # ---- 死区（静止稳定性）----
+    position_deadband: 0.022    # 3D 误差死区 (m)，须 > BS 深度噪声 ±20mm
+    deadband_hysteresis: 1.6    # 退出阈值 = 死区 × 此值
+    orientation_deadband_deg: 2.0
+
+    # ---- 老架构前馈（kf_enable=false 时生效）----
+    vel_feedforward: 1.0
+    ff_smooth: 0.55
+    ff_max_vel: 0.7
+    ff_min_speed: 0.030
+    ff_taper_dist: 0.07
+
+    # ---- 架构开关与卡尔曼（新架构）----
+    kf_enable: true             # false = 老架构（帧间差分+EMA）
+    kf_q: 1.5                   # 过程噪声 (m/s^2)^2（1.5=更稳，log42 调优）
+    kf_r: 0.004                 # 观测噪声方差 (m^2)
+    kf_lead_ms: 8.0             # 外推补偿 (ms)（最终版）
+    kf_ff_deadband_off: 0.06    # 速度死区下沿：低于则判定静止
+    kf_ff_deadband_on: 0.13     # 死区回差上沿：超过才恢复运动
+    kf_ff_exit_frames: 7        # 跳出静止确认帧数（140ms 窗，止振关键）
+    kf_hold_tol: 0.04           # 静止目标锁存容差 (m)
+    kf_resync_frames: 3         # 连续跳变剔除上限，达到则重同步
+
+    # ---- 自适应过程噪声 Q（本机噪声环境实测无收益，默认关）----
+    kf_adapt_enable: false
+    kf_adapt_ref: 0.10
+    kf_adapt_max: 2.5
+    kf_adapt_decay: 0.85
+
+    # ---- 平滑与加速度 ----
+    smooth_alpha: 0.48          # 速度指令 EMA（最终版）
+    reversal_fast_response: true
+    max_accel: 2.8              # 末端指令加速度上限 (m/s^2)
+    reversal_accel_boost: 2.0
+
+    # ---- 伸展度增益调度 ----
+    reach_soft_start: 0.27
+    reach_soft_end: 0.40
+    reach_min_scale: 0.58
+    reach_dock_dist: 0.21
+    reach_att_tau: 0.15         # 衰减乘子平滑时间常数 (s)
+
+    # ---- 姿态保持 ----
+    k_orientation: 1.6
+
+    # ---- 丢失处理 ----
+    lost_hold_s: 0.30           # 连续丢手超过此秒数 → 保持不动
+    coast_window_s: 0.12        # 丢失外推窗口 (s)
+    coast_decay_per20ms: 0.90   # 外推速度每 20ms 衰减
+    coast_max_vel: 0.35         # 外推速度限幅 (m/s)
+
+    # ---- 夹爪冻结（本节点持有机械臂，知道关节速度）----
+    gripper_hold_while_moving: true   # 手臂运动时冻结夹爪
+    gripper_move_speed_threshold: 0.05  # 「手臂在运动」关节速度阈值 (rad/s)
+    gripper_deadband_deg: 2.0   # 夹爪目标角变化小于此值不更新
+
+    # ---- 进阶（一般不动）----
+    servo_direction: 1.0        # 运动方向反了改 -1.0
+    damping_base: 0.010
+    damping_adaptive: true
+    manipulability_threshold: 0.004
+    min_manip_speed_scale: 0.35
+    ctrl_rate_hz: 100.0         # 伺服循环频率（原代码 CTRL_RATE=0.01s）
+
+    # ---- 工作空间虚拟墙（基座系，米）⚠️ 按实际环境测量 ----
+    workspace_min: [-0.40, -0.10, 0.03]
+    workspace_max: [ 0.40,  0.40, 0.60]
+    workspace_radius: 0.42       # 水平伸展半径硬上限（70% 臂展红线，禁止调大）

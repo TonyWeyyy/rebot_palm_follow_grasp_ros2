@@ -1,0 +1,4 @@
+source;share/rebot_interfaces/local_setup.bash
+source;share/rebot_interfaces/local_setup.dsv
+source;share/rebot_interfaces/local_setup.sh
+source;share/rebot_interfaces/local_setup.zsh

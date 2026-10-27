@@ -1,0 +1,6 @@
+{
+  "package_name": "rebot_interfaces",
+  "non_idl_tuples": [
+    "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/src/rebot_interfaces:msg/PalmTarget.msg"
+  ]
+}

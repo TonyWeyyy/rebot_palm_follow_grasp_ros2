@@ -1,0 +1,6 @@
+source;share/rebot_palm_follow_grasp/hook/pythonpath.ps1
+source;share/rebot_palm_follow_grasp/hook/pythonpath.dsv
+source;share/rebot_palm_follow_grasp/hook/pythonpath.sh
+source;share/rebot_palm_follow_grasp/hook/ament_prefix_path.ps1
+source;share/rebot_palm_follow_grasp/hook/ament_prefix_path.dsv
+source;share/rebot_palm_follow_grasp/hook/ament_prefix_path.sh

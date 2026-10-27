@@ -1,0 +1,3 @@
+[console_scripts]
+servo_node = rebot_palm_follow_grasp.servo_node:main
+vision_node = rebot_palm_follow_grasp.vision_node:main

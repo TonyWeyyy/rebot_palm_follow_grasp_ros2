@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces/rebot_interfaces__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "rebot_interfaces::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "rebot_interfaces__py::@ee9cad00e7a034caa03b",
+	"name" : "rebot_interfaces__py",
+	"paths" : 
+	{
+		"build" : "rebot_interfaces__py",
+		"source" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces/rebot_interfaces__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces/rebot_interfaces__py/CMakeFiles/rebot_interfaces__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces/rebot_interfaces__py/CMakeFiles/rebot_interfaces__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces/rosidl_generator_py/rebot_interfaces/_rebot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

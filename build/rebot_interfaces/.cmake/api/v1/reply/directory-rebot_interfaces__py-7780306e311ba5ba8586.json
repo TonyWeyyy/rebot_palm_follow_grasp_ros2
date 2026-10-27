@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rebot_interfaces__py",
+		"source" : "/home/tony/wey/rebot_developer/rebot_CV_control/rebot_palm_follow_grasp_ros2/build/rebot_interfaces/rebot_interfaces__py"
+	}
+}

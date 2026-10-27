@@ -1,0 +1,150 @@
+[10/27 16:06:16.658072][info][12876][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/27 16:06:16.736470][info][12876][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[10/27 16:06:16.736480][info][12876][DeviceManager.cpp:25] Current found device(s): (1)
+[10/27 16:06:16.736482][info][12876][DeviceManager.cpp:34] 	- Name: Gemini2, PID: 0x0670, SN/ID: AY6B95F002P, Connection: USB3.0
+[10/27 16:06:16.736484][info][12876][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/27 16:06:17.739405][info][12876][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/27 16:06:17.739418][info][12876][DeviceManager.cpp:34] 	- Name: Gemini2, PID: 0x0670, SN/ID: AY6B95F002P, Connection: USB3.0
+[10/27 16:06:17.739465][warning][12876][PropertyServer.cpp:120] [AY6B95F002P] Not added to property map, property not found in OBPropertyBaseInfoMap, id=108
+[10/27 16:06:17.739481][warning][12876][PropertyServer.cpp:120] [AY6B95F002P] Not added to property map, property not found in OBPropertyBaseInfoMap, id=4035
+[10/27 16:06:17.739490][warning][12876][PropertyServer.cpp:120] [AY6B95F002P] Not added to property map, property not found in OBPropertyBaseInfoMap, id=5003
+[10/27 16:06:17.742850][info][12876][DeviceManager.cpp:200] Device created successfully! Name: Gemini 2, PID: 0x0670, SN/ID: AY6B95F002P FW: 1.4.98
+[10/27 16:06:17.742862][info][12876][Pipeline.cpp:54] [AY6B95F002P] Pipeline created with device: {name: Gemini 2, sn: AY6B95F002P}, @0x5BD4D860AF30
+[10/27 16:06:17.794474][info][12876][Pipeline.cpp:228] [AY6B95F002P] Check and set config done!
+[10/27 16:06:17.795185][info][12876][Pipeline.cpp:266] [AY6B95F002P] Try to start streams!
+[10/27 16:06:17.795188][info][12876][VideoSensor.cpp:61] [AY6B95F002P] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 60}
+[10/27 16:06:17.795191][info][12876][SensorBase.cpp:216] [AY6B95F002P] Stream state changed from STOPPED to STARTING@Color
+[10/27 16:06:17.795192][info][12876][VideoSensor.cpp:130] [AY6B95F002P] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 60}
+[10/27 16:06:17.858282][info][12876][VideoSensor.cpp:61] [AY6B95F002P] Try to start stream: {type: Depth, format: Y14, width: 640, height: 400, fps: 60}
+[10/27 16:06:17.858290][info][12876][SensorBase.cpp:216] [AY6B95F002P] Stream state changed from STOPPED to STARTING@Depth
+[10/27 16:06:17.858293][info][12876][VideoSensor.cpp:130] [AY6B95F002P] Start backend stream: {type: Depth, format: Y14, width: 640, height: 400, fps: 60}
+[10/27 16:06:17.904892][info][12975][SensorBase.cpp:216] [AY6B95F002P] Stream state changed from STARTING to STREAMING@Color
+[10/27 16:06:17.919924][info][12876][Pipeline.cpp:293] [AY6B95F002P] Start streams done!
+[10/27 16:06:17.919926][info][12876][Pipeline.cpp:250] [AY6B95F002P] Pipeline start done!
+[10/27 16:06:17.920147][warning][12977][VideoSensor.cpp:226] [AY6B95F002P] This frame will be dropped because the data size does not match the expectation! size=22328, expected=448000 @Depth
+[10/27 16:06:17.932768][info][12977][SensorBase.cpp:216] [AY6B95F002P] Stream state changed from STARTING to STREAMING@Depth
+[10/27 16:06:17.948180][warning][12977][ObException.cpp:26] A recoverable_exception has occurred!
+ - where: TimestampAnomalyDetector.cpp(56)
+ - msg: Timestamp anomaly detected, timestamp: 2887064824, lastTimestamp: 1808591492, currentDiff: 1078473332, diffLastValid: 1078473332, maxValidTimestampDiff: 5000000
+ - type: UNKNOWN
+ - status: 101
+[10/27 16:06:17.948290][warning][12977][SensorBase.cpp:464] [AY6B95F002P] Execute failure! A libobsensor_exception has occurred!
+ - where: SensorBase.cpp(464):outputFrame
+ - msg: Timestamp anomaly detected, timestamp: 2887064824, lastTimestamp: 1808591492, currentDiff: 1078473332, diffLastValid: 1078473332, maxValidTimestampDiff: 5000000
+ - type: N11libobsensor21recoverable_exceptionE
+ - status: 101
+[10/27 16:06:17.948299][error][12977][SensorBase.cpp:464] [AY6B95F002P] Timestamp anomaly detected, frame: 2887064824, sensor: Depth
+[10/27 16:06:18.503562][warning][12876][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0
+[10/27 16:06:19.221698][warning][12981][Pipeline.cpp:324] [AY6B95F002P] Output frameset queue is full, drop oldest frameset!
+[10/27 16:06:21.509210][warning][12876][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0 [**167 logs in 3005ms**]
+[10/27 16:06:22.238898][warning][12996][Pipeline.cpp:324] [AY6B95F002P] Output frameset queue is full, drop oldest frameset! [**2 logs in 3017ms, last: 16:06:19.254814**]
+[10/27 16:06:22.905976][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.388123fps
+[10/27 16:06:22.922679][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.576172fps
+[10/27 16:06:22.928222][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=60.103836fps
+[10/27 16:06:22.945535][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.892197fps
+[10/27 16:06:27.521403][warning][12876][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0 [**359 logs in 6012ms**]
+[10/27 16:06:27.916096][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:06:27.932909][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:06:27.938306][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.892197fps
+[10/27 16:06:27.955550][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
+[10/27 16:06:32.926099][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:06:32.942837][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:06:32.948349][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:06:32.965670][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
+[10/27 16:06:37.936084][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:06:37.952942][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:06:37.958458][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:06:37.975800][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
+[10/27 16:06:39.529262][warning][12876][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0 [**719 logs in 12007ms**]
+[10/27 16:06:42.946364][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:06:42.963068][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:06:42.968579][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:06:42.985809][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
+[10/27 16:06:47.956377][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:06:47.973120][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:06:47.978620][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:06:47.995975][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
+[10/27 16:06:52.966422][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:06:52.983147][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:06:52.988682][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:06:53.006215][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
+[10/27 16:06:57.976401][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:06:57.993245][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:06:57.998632][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:06:58.016121][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.892197fps
+[10/27 16:07:02.986475][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:07:03.003398][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:07:03.008869][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:07:03.026033][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
+[10/27 16:07:03.543762][warning][12876][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0 [**1437 logs in 24014ms**]
+[10/27 16:07:05.698542][warning][12981][Pipeline.cpp:324] [AY6B95F002P] Output frameset queue is full, drop oldest frameset!
+[10/27 16:07:07.996653][info][12975][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:07:08.013287][info][12979][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.892197fps
+[10/27 16:07:08.019233][info][12977][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:07:08.037197][info][12981][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.868286fps
+[10/27 16:07:08.704018][warning][12981][Pipeline.cpp:324] [AY6B95F002P] Output frameset queue is full, drop oldest frameset! [**180 logs in 3005ms**]
+[10/27 16:12:00.090273][info][13292][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/27 16:12:00.169684][info][13292][LinuxUsbPal.cpp:334] Create PollingDeviceWatcher!
+[10/27 16:12:00.169696][info][13292][DeviceManager.cpp:25] Current found device(s): (1)
+[10/27 16:12:00.169698][info][13292][DeviceManager.cpp:34] 	- Name: Gemini2, PID: 0x0670, SN/ID: AY6B95F002P, Connection: USB3.0
+[10/27 16:12:00.169700][info][13292][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/27 16:12:01.174076][info][13292][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/27 16:12:01.174093][info][13292][DeviceManager.cpp:34] 	- Name: Gemini2, PID: 0x0670, SN/ID: AY6B95F002P, Connection: USB3.0
+[10/27 16:12:01.174187][warning][13292][PropertyServer.cpp:120] [AY6B95F002P] Not added to property map, property not found in OBPropertyBaseInfoMap, id=108
+[10/27 16:12:01.174213][warning][13292][PropertyServer.cpp:120] [AY6B95F002P] Not added to property map, property not found in OBPropertyBaseInfoMap, id=4035
+[10/27 16:12:01.174246][warning][13292][PropertyServer.cpp:120] [AY6B95F002P] Not added to property map, property not found in OBPropertyBaseInfoMap, id=5003
+[10/27 16:12:01.178526][info][13292][DeviceManager.cpp:200] Device created successfully! Name: Gemini 2, PID: 0x0670, SN/ID: AY6B95F002P FW: 1.4.98
+[10/27 16:12:01.178545][info][13292][Pipeline.cpp:54] [AY6B95F002P] Pipeline created with device: {name: Gemini 2, sn: AY6B95F002P}, @0x5FC862E56CF0
+[10/27 16:12:01.231233][info][13292][Pipeline.cpp:228] [AY6B95F002P] Check and set config done!
+[10/27 16:12:01.232173][info][13292][Pipeline.cpp:266] [AY6B95F002P] Try to start streams!
+[10/27 16:12:01.232176][info][13292][VideoSensor.cpp:61] [AY6B95F002P] Try to start stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 60}
+[10/27 16:12:01.232178][info][13292][SensorBase.cpp:216] [AY6B95F002P] Stream state changed from STOPPED to STARTING@Color
+[10/27 16:12:01.232180][info][13292][VideoSensor.cpp:130] [AY6B95F002P] Start backend stream: {type: Color, format: MJPG, width: 640, height: 480, fps: 60}
+[10/27 16:12:01.295118][info][13292][VideoSensor.cpp:61] [AY6B95F002P] Try to start stream: {type: Depth, format: Y14, width: 640, height: 400, fps: 60}
+[10/27 16:12:01.295127][info][13292][SensorBase.cpp:216] [AY6B95F002P] Stream state changed from STOPPED to STARTING@Depth
+[10/27 16:12:01.295131][info][13292][VideoSensor.cpp:130] [AY6B95F002P] Start backend stream: {type: Depth, format: Y14, width: 640, height: 400, fps: 60}
+[10/27 16:12:01.334345][warning][13391][VideoSensor.cpp:214] [AY6B95F002P] This frame will be dropped because jpg format verification failure! @Color
+[10/27 16:12:01.357245][info][13292][Pipeline.cpp:293] [AY6B95F002P] Start streams done!
+[10/27 16:12:01.357250][info][13292][Pipeline.cpp:250] [AY6B95F002P] Pipeline start done!
+[10/27 16:12:01.369575][info][13393][SensorBase.cpp:216] [AY6B95F002P] Stream state changed from STARTING to STREAMING@Depth
+[10/27 16:12:01.374876][info][13391][SensorBase.cpp:216] [AY6B95F002P] Stream state changed from STARTING to STREAMING@Color
+[10/27 16:12:01.385098][warning][13393][ObException.cpp:26] A recoverable_exception has occurred!
+ - where: TimestampAnomalyDetector.cpp(56)
+ - msg: Timestamp anomaly detected, timestamp: 3230496829, lastTimestamp: 2939718980, currentDiff: 290777849, diffLastValid: 290777849, maxValidTimestampDiff: 5000000
+ - type: UNKNOWN
+ - status: 101
+[10/27 16:12:01.385142][warning][13393][SensorBase.cpp:464] [AY6B95F002P] Execute failure! A libobsensor_exception has occurred!
+ - where: SensorBase.cpp(464):outputFrame
+ - msg: Timestamp anomaly detected, timestamp: 3230496829, lastTimestamp: 2939718980, currentDiff: 290777849, diffLastValid: 290777849, maxValidTimestampDiff: 5000000
+ - type: N11libobsensor21recoverable_exceptionE
+ - status: 101
+[10/27 16:12:01.385144][error][13393][SensorBase.cpp:464] [AY6B95F002P] Timestamp anomaly detected, frame: 3230496829, sensor: Depth
+[10/27 16:12:01.906912][warning][13292][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0
+[10/27 16:12:02.625340][warning][13396][Pipeline.cpp:324] [AY6B95F002P] Output frameset queue is full, drop oldest frameset!
+[10/27 16:12:04.337978][warning][13394][VideoSensor.cpp:214] [AY6B95F002P] This frame will be dropped because jpg format verification failure! @Color [**2 logs in 3003ms, last: 16:12:01.358257**]
+[10/27 16:12:04.912866][warning][13292][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0 [**167 logs in 3005ms**]
+[10/27 16:12:05.642446][warning][13411][Pipeline.cpp:324] [AY6B95F002P] Output frameset queue is full, drop oldest frameset! [**1 logs in 3017ms, last: 16:12:02.641818**]
+[10/27 16:12:06.342948][info][13391][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.904156fps
+[10/27 16:12:06.376481][info][13397][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.788044fps
+[10/27 16:12:06.381898][info][13393][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=60.055866fps
+[10/27 16:12:06.382641][info][13396][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.904156fps
+[10/27 16:12:10.925179][warning][13292][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0 [**360 logs in 6012ms**]
+[10/27 16:12:11.353033][info][13391][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:12:11.386454][info][13397][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:12:11.391893][info][13393][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:12:11.392492][info][13396][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
+[10/27 16:12:16.363125][info][13391][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:12:16.396642][info][13397][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:12:16.402019][info][13393][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:12:16.404253][info][13396][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.868286fps
+[10/27 16:12:21.373193][info][13391][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:12:21.406919][info][13397][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:12:21.412193][info][13393][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:12:21.412870][info][13396][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.892197fps
+[10/27 16:12:22.882637][warning][13396][Pipeline.cpp:324] [AY6B95F002P] Output frameset queue is full, drop oldest frameset!
+[10/27 16:12:22.942181][warning][13457][Pipeline.cpp:335] [AY6B95F002P] Wait for frame timeout, you can try to increase the wait time! current timeout=0 [**705 logs in 12016ms, last: 16:12:22.698761**]
+[10/27 16:12:25.888550][warning][13396][Pipeline.cpp:324] [AY6B95F002P] Output frameset queue is full, drop oldest frameset! [**180 logs in 3005ms**]
+[10/27 16:12:26.383267][info][13391][VideoSensor.cpp:180] [AY6B95F002P] Color backend frame callback, frameRate=59.880238fps
+[10/27 16:12:26.416802][info][13397][SensorBase.cpp:405] [AY6B95F002P] Color Streaming... frameRate=59.880238fps
+[10/27 16:12:26.422369][info][13393][VideoSensor.cpp:180] [AY6B95F002P] Depth backend frame callback, frameRate=59.880238fps
+[10/27 16:12:26.423277][info][13396][SensorBase.cpp:405] [AY6B95F002P] Depth Streaming... frameRate=59.880238fps
